@@ -22,12 +22,10 @@ body {
     min-height: 100vh;
     padding: 20px;
 
-    background: linear-gradient(
-        135deg,
-        #ffe4f2,
-        #ffd1ec,
-        #ffc0e6
-    );
+    background:
+        linear-gradient(to right,
+            rgba(255, 255, 255, 0.299),
+            rgba(255, 33, 137, 0.449));
 }
 
 .container {
@@ -61,6 +59,7 @@ body {
 }
 
 .titulo-secao {
+    font-family: cursive;
     text-align: center;
     color: var(--cor-secundaria);
     margin-bottom: 12px;
