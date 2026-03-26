@@ -4,67 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylles.css">
-    <link rel="icon" type="image/icon" href="icon/estrela.ico">
-    <title>Meu Portfólio Pessoal - Kivia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="icon/estrela.ico">
+    <title>Portfólio - Kivia</title>
 </head>
 
 <body>
-    <header>
-        <h1 id="nome-principal" class="titulo-principal">
-            Kivia Maria Alves Santos
-        </h1>
+
+    <header class="cabecalho">
+        <h1 class="titulo-principal">Kivia Maria Alves Santos</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Sobre Mim</h2>
+    <main class="container">
 
-            <p>
-                Farmando Aura o tempo todo... Aulas de html são cools!!
+        <section class="card">
+            <h2 class="titulo-secao">Sobre Mim</h2>
+
+            <p class="texto">
+                Farmando Aura o tempo todo... Aulas de HTML são cools!!
             </p>
 
-            <img src="img/hello-kitty.png" alt="Ilustração da hello kitty" class="imagem-kitty" width="300">
+            <figure class="imagem-container">
+                <img src="img/hello-kitty.png" alt="Hello Kitty">
+            </figure>
 
-            <img src="img.jpg" alt="Ilustração sobre farmar aura" class="imagem-ilustrativa">
+            <figure class="imagem-container">
+                <img src="img.jpg" alt="Farmando aura">
+            </figure>
         </section>
 
-        <section id="audio">
-             <audio controls>
+        <section class="card">
+            <h2 class="titulo-secao">Música 🎵</h2>
+
+            <audio controls class="audio-player">
                 <source src="audio/Funk de Beleza (Super Slowed).m4a" type="audio/mp4">
             </audio>
         </section>
 
-        <section>
+        <section class="card">
             <h2 class="titulo-secao">Habilidades</h2>
 
-            <ul>
+            <ul class="lista">
                 <li>Ser eu</li>
                 <li>Amar</li>
                 <li>Brincar com todo mundo (incluindo o professor)</li>
             </ul>
-            
         </section>
 
-        <section>
-            <h2 class="titulo-secao">Metas para o futuro</h2>
+        <section class="card">
+            <h2 class="titulo-secao">Metas</h2>
 
-            <p>
-                Ser verdadeiramente <strong>Feliz</strong>.
+            <p class="texto">
+                Ser verdadeiramente <strong>feliz</strong>.
             </p>
 
-
             <a href="https://github.com/star-kivia" target="_blank" class="botao">
-                Visite meu GitHub 💖
+                Meu GitHub 💖
             </a>
         </section>
 
-
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>📧 Manda um sms para as nuvens</p>
     </footer>
-</body>
 
+</body>
 </html>
