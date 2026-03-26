@@ -1,9 +1,13 @@
 :root {
     --cor-primaria: #ff69b4;
     --cor-secundaria: #ae1662;
-    --cor-fundo: #ffffffcc;
-    --cor-texto: #5a2a4d;
+    --cor-fundo: rgba(255, 255, 255, 0.85);
+    --cor-texto: #4a2a40;
     --cor-hover: #ff1493;
+
+    --sombra: 0 8px 20px rgba(0, 0, 0, 0.08);
+    --sombra-hover: 0 12px 25px rgba(0, 0, 0, 0.12);
+    --borda-radius: 14px;
 }
 
 * {
@@ -13,59 +17,77 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     color: var(--cor-texto);
     min-height: 100vh;
     padding: 20px;
+
     background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 33, 137, 0.4)
+        135deg,
+        #ffe4f2,
+        #ffd1ec,
+        #ffc0e6
     );
 }
 
 .container {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .cabecalho {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .titulo-principal {
+    font-size: 1.8rem;
     color: var(--cor-primaria);
 }
 
 .card {
     background: var(--cor-fundo);
-    padding: 20px;
+    padding: 22px;
     margin-bottom: 20px;
-    border-radius: 12px;
+    border-radius: var(--borda-radius);
+    box-shadow: var(--sombra);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
 }
 
 .titulo-secao {
     text-align: center;
     color: var(--cor-secundaria);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
 }
 
 .texto {
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .imagem-container img {
     display: block;
     margin: 15px auto;
-    max-width: 80%;
-    border-radius: 10px;
+    max-width: 75%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.imagem-container img:hover {
+    transform: scale(1.05);
 }
 
 .audio-player {
     display: block;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 .lista {
@@ -75,25 +97,37 @@ body {
 
 .lista li {
     margin: 8px 0;
+    padding: 6px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.lista li:hover {
+    background: rgba(255, 105, 180, 0.15);
 }
 
 .botao {
     display: block;
     width: fit-content;
-    margin: 15px auto;
-    padding: 8px 16px;
-    background: var(--cor-primaria);
+    margin: 18px auto;
+    padding: 10px 18px;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    box-shadow: var(--sombra);
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
-    background: var(--cor-hover);
+    transform: scale(1.05);
+    box-shadow: var(--sombra-hover);
 }
 
 .rodape {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
