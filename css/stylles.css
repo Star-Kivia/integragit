@@ -39,6 +39,7 @@ body {
 }
 
 .titulo-principal {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.8rem;
     color: var(--cor-primaria);
 }
